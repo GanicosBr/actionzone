@@ -94,21 +94,42 @@ body {
     font-weight: 600;
 }
 
-@media (max-width: 1300px) {
+@media screen and (max-width: 1300px) {
+    /* Cabeçalho */
     .cabecalho{
-        padding: 10% 0% 0% 5%;
+        padding: 12%;
     }
-    .cabecalho_menu{
-        justify-content: center;
+    .cabecalho_menu {
+        flex-direction: column;
+        text-align: center;
+        gap: 10px;
     }
-    .inicio{
+    .cabecalho_menu_link{
+        font-size: 1.4rem;
+    }
+    .inicio_fundo {
+        padding: 10%;
+        width: 90%;
+    } 
+    .inicio {
         flex-direction: column-reverse;
+        gap: 7px; 
     }
-    .inicio_conteudo{
-        width: auto;
+    .inicio_conteudo {
+        width: 120%;
+        flex-direction: column;
+        gap: 15px;
     }
-    .inicio_saibamais{
-        justify-content: center;
-        width: 80%;
+    .inicio_titulo {
+        font-size: 1.6rem;
+        text-align: center;
+    } 
+    .inicio_texto {
+        font-size: 1.25rem;
+        text-align: center;
+    }
+    .rodape{
+        padding: 3px;
+        font-size: 1.2rem;
     }
 }
